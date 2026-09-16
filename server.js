@@ -18,7 +18,7 @@ const ai = new GoogleGenAI({
 app.use(
     cors({
         origin: [
-            "http://localhost:5173",
+            "https://portfolio-ai-server-beta.vercel.app/api/cha",
             "https://portfolio-frejus.vercel.app",
         ],
     })
