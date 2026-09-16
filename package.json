@@ -1,0 +1,23 @@
+{
+  "name": "ai-server",
+  "version": "1.0.0",
+  "description": "Backend IA du portfolio de Fréjus Adjanohoun",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "globals": "^17.12.0"
+  }
+}
