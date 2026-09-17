@@ -19,7 +19,7 @@ app.use(
     cors({
         origin: [
             "http://localhost:5173",
-            "https://portfolio-frejus.vercel.app",
+            "https://frejus-adjanohoun.vercel.app",
         ],
     })
 );
