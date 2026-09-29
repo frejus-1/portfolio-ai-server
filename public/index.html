@@ -25,20 +25,11 @@
          BOUTON FLOTTANT
     ====================================================== -->
 
-    <button
-        type="button"
-        class="ai-chatbot-button"
-        id="openChatButton"
-        aria-label="Ouvrir l'assistant IA"
-        title="Ouvrir l'assistant IA"
-    >
+    <button type="button" class="ai-chatbot-button" id="openChatButton" aria-label="Ouvrir l'assistant IA"
+        title="Ouvrir l'assistant IA">
 
         <span class="ai-chatbot-button-photo">
-            <img
-                src="/frejus.png"
-                alt="Fréjus"
-                onerror="this.style.display='none'"
-            >
+            <img src="/frejus.png" alt="Fréjus" onerror="this.style.display='none'">
         </span>
 
         <span class="ai-chatbot-button-text">
@@ -54,22 +45,14 @@
          OVERLAY
     ====================================================== -->
 
-    <div
-        class="ai-chatbot-overlay"
-        id="chatOverlay"
-        hidden
-    >
+    <div class="ai-chatbot-overlay" id="chatOverlay" hidden>
+
 
         <!-- =================================================
              FENÊTRE
         ================================================== -->
 
-        <div
-            class="ai-chatbot-window"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="ai-chatbot-title"
-        >
+        <div class="ai-chatbot-window" role="dialog" aria-modal="true" aria-labelledby="ai-chatbot-title">
 
             <!-- =============================================
                  HEADER
@@ -77,15 +60,12 @@
 
             <header class="ai-chatbot-header">
 
+
                 <div class="ai-chatbot-header-info">
 
                     <div class="ai-chatbot-avatar">
 
-                        <img
-                            src="/frejus.png"
-                            alt="Fréjus"
-                            onerror="this.style.display='none'"
-                        >
+                        <img src="/frejus.png" alt="Fréjus" onerror="this.style.display='none'">
 
                     </div>
 
@@ -110,15 +90,19 @@
                 </div>
 
 
-                <button
-                    type="button"
-                    class="ai-chatbot-close"
-                    id="closeChatButton"
-                    aria-label="Fermer l'assistant IA"
-                    title="Fermer l'assistant IA"
-                >
-                    ×
-                </button>
+                <a href="https://frejus-adjanohoun.vercel.app/" class="visit-portfolio-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 3H21V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M18 13V19C18 20.1 17.1 21 16 21H5C3.9 21 3 20.1 3 19V8C3 6.9 3.9 6 5 6H11"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Visiter le portfolio</span>
+                </a>
 
             </header>
 
@@ -127,25 +111,15 @@
                  MESSAGES
             ============================================== -->
 
-            <div
-                class="ai-chatbot-messages"
-                id="messagesContainer"
-            >
+            <div class="ai-chatbot-messages" id="messagesContainer">
 
                 <!-- Message de bienvenue -->
 
-                <div
-                    class="ai-message ai-message-assistant"
-                    id="welcomeMessage"
-                >
+                <div class="ai-message ai-message-assistant" id="welcomeMessage">
 
                     <div class="ai-message-avatar">
 
-                        <img
-                            src="/frejus.png"
-                            alt="Fréjus"
-                            onerror="this.style.display='none'"
-                        >
+                        <img src="/frejus.png" alt="Fréjus" onerror="this.style.display='none'">
 
                     </div>
 
@@ -172,10 +146,7 @@
                      QUESTIONS RAPIDES
                 ========================================== -->
 
-                <div
-                    class="ai-quick-questions"
-                    id="quickQuestions"
-                >
+                <div class="ai-quick-questions" id="quickQuestions">
 
                     <span>
                         Questions rapides
@@ -183,31 +154,19 @@
 
                     <div>
 
-                        <button
-                            type="button"
-                            data-question="Qui est Fréjus ?"
-                        >
+                        <button type="button" data-question="Qui est Fréjus ?">
                             Qui est Fréjus ?
                         </button>
 
-                        <button
-                            type="button"
-                            data-question="Quelles technologies utilise-t-il ?"
-                        >
+                        <button type="button" data-question="Quelles technologies utilise-t-il ?">
                             Quelles technologies utilise-t-il ?
                         </button>
 
-                        <button
-                            type="button"
-                            data-question="Quels sont ses projets ?"
-                        >
+                        <button type="button" data-question="Quels sont ses projets ?">
                             Quels sont ses projets ?
                         </button>
 
-                        <button
-                            type="button"
-                            data-question="Comment le contacter ?"
-                        >
+                        <button type="button" data-question="Comment le contacter ?">
                             Comment le contacter ?
                         </button>
 
@@ -227,41 +186,18 @@
                  FORMULAIRE
             ============================================== -->
 
-            <form
-                class="ai-chatbot-form"
-                id="chatForm"
-            >
+            <form class="ai-chatbot-form" id="chatForm">
 
-                <textarea
-                    id="messageInput"
-                    rows="1"
-                    maxlength="2000"
-                    placeholder="Posez-moi une question..."
-                    aria-label="Posez-moi une question..."
-                ></textarea>
+                <textarea id="messageInput" rows="1" maxlength="2000" placeholder="Posez-moi une question..."
+                    aria-label="Posez-moi une question..."></textarea>
 
 
-                <button
-                    type="submit"
-                    id="sendButton"
-                    aria-label="Envoyer"
-                    title="Envoyer"
-                    disabled
-                >
+                <button type="submit" id="sendButton" aria-label="Envoyer" title="Envoyer" disabled>
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
 
-                        <path
-                            d="M5 12h13M13 6l6 6-6 6"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
+                        <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
 
                     </svg>
 
